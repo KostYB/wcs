@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Главная</title>
+
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Keywords">
+    <meta name="author" content="BKY">
+	
+	<!--	
+
+    <meta name="image" content="./img/favicon/logo.png">
+
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Название">
+    <meta property="og:description" content="Описание">
+    <meta property="og:image" content="./img/favicon/logo.png">
+    <meta property="og:url" content="https://example.com">
+    
+    <link rel="canonical" href="https://example.com">
+
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="//cdnjs.cloudflare.com">
+    <link rel="preconnect" href="//google-analytics.com">
+	
+	
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    
+   <link rel="manifest" href="./img/favicon/manifest.json"> 
+    
+    <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    	-->
+    <meta name="theme-color" content="#FFCD00">
+
+
+
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+
+
+    
+
+    	
+	 <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin> 
+	 <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin> 
+	 <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin> 
+	 <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin> 
+	 <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin> 
+	 <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin> 
+	 
+	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css"> 
+	
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body class="loading">
+
+    <h1 class="hidden">Главная</h1>
+
+    <header class="hd">
+    <div class="hd__wrapper">
+        <div class="hd__logo">
+            <a href="/" class="hd-logo">
+                <img src="img/wcs.svg" alt="" width="178" height="61" class="hd-logo__img">
+            </a>
+        </div>
+        <div class="hd__menu">
+            <nav class="menu">
+                <div class="menu__wrapper">
+                    <ul class="menu-list">                                                            
+                        <li class="menu-list__item"><a href="#" class="menu-link">Главная</a></li>
+                        <li class="menu-list__item js-dd-parent">
+                            <span class="menu-link">Услуги</span>
+                            <div class="menu-dropdown">
+                                <ul class="smenu-list js-dd-dn">
+                                    <li><a href="#" class="smenu-link">Авиаперевозки грузов</a></li>
+                                    <li><a href="#" class="smenu-link">Перевозки ЖД транспортом</a></li>
+                                    <li><a href="#" class="smenu-link">Перевозка автотранспортом</a></li>
+                                    <li><a href="#" class="smenu-link">Морские перевозки</a></li>
+                                    <li><a href="#" class="smenu-link">Брокерские услуги</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-list__item"><a href="#" class="menu-link">О компании</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-link">Новости</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-link">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="hd__search">
+            <form action="/" class="hd-search">
+                <svg class="ic ic-search"><use xlink:href="img/sprite.svg#search"></use></svg>
+                <input type="search" class="hd-search__input" placeholder="поиск">
+            </form>
+        </div>
+        <div class="hd__phone">
+            <a href="tel:380662232487" class="hd-phone">
+                <span class="hd-phone__num">+38 (066) 223-24-87</span>
+                <span class="hd-phone__icon">
+                    <svg class="ic ic-phone"><use xlink:href="img/sprite.svg#phone"></use></svg>
+                </span>
+            </a>
+        </div>
+        <div class="hd__button">
+            <button type="button" class="btn hd-button" data-modal="proposal">Оставить заявку</button>
+        </div>
+        <div class="hd__language">
+            <div class="language dd-container js-dd-parent">
+                <div class="dd-container__selection">
+                    <span class="dd-container__text">RU</span>
+                </div>
+                <div class="dd-dropdown">
+                    <div class="dd-dropdown__wrapper js-dd-dn">
+                        <div class="dd-dropdown__item">
+                            <a href="#">UA</a>
+                        </div>
+                        <div class="dd-dropdown__item">
+                            <a href="#">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="mobile-language lg-dn">
+                <li><a href="#" class="is-active">RU</a></li>
+                <li><a href="#">UA</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-header lg-dn">
+    <div class="mobile-header__wrapper">
+        <div class="mobile-header__logo">
+            <a href="/" class="mobile-header-logo">
+                <img src="img/wcs.svg" alt="" width="124" height="42" class="mobile-header-logo__img">
+            </a>
+        </div>
+        <div class="mobile-header__btn">
+            <button type="button" class="menu-btn js-menu-btn"></button>
+        </div>
+    </div>
+</div>
+
+
+    <div class="panel">
+    <div class="panel__wrapper">
+        <div class="panel__item">
+            <div class="panel__icon">
+                <svg class="ic ic-book"><use xlink:href="img/sprite.svg#book"></use></svg>
+            </div>
+            <div class="panel__text">Брокерские услуги</div>
+            <a href="#" class="panel__link"></a>
+        </div>
+        <div class="panel__item">
+            <div class="panel__icon">
+                <svg class="ic ic-avia"><use xlink:href="img/sprite.svg#avia"></use></svg>
+            </div>
+            <div class="panel__text">Авиа</div>
+            <a href="#" class="panel__link"></a>
+        </div>
+        <div class="panel__item">
+            <div class="panel__icon">
+                <svg class="ic ic-sea"><use xlink:href="img/sprite.svg#sea"></use></svg>
+            </div>
+            <div class="panel__text">Море</div>
+            <a href="#" class="panel__link"></a>
+        </div>
+        <div class="panel__item">
+            <div class="panel__icon">
+                <svg class="ic ic-train"><use xlink:href="img/sprite.svg#train"></use></svg>
+            </div>
+            <div class="panel__text">ЖД</div>
+            <a href="#" class="panel__link"></a>
+        </div>
+        <div class="panel__item">
+            <div class="panel__icon">
+                <svg class="ic ic-personal ic-stroke"><use xlink:href="img/sprite.svg#personal"></use></svg>
+            </div>
+            <div class="panel__text">Личный кабинет</div>
+            <a href="#" class="panel__link"></a>
+        </div>
+    </div>
+</div>
+
+
+    <main class="page-main">
+        <section class="hero">
+            <div class="hero__wrapper indent-content">
+                <div class="hero__content">
+                    <h2 class="hero__title">Доставка грузов <br> по всему миру</h2>
+                    <button type="button" class="hero__btn btn" data-modal="proposal">Оставить заявку</button>
+                </div>
+                
+                <img src="img/main/hero-bg.jpg" alt="" class="hero__bg full-img">
+            </div>
+        </section>
+       
+        <section class="main-services">
+            <div class="main-services__wrapper indent-content">
+                <h2 class="main-services__title h2">Услуги</h2>
+
+                <div class="tabs">
+                    <select class="lg-dn main-services-select js-services-select">
+                        <option value="0">Авиаперевозки грузов</option>
+                        <option value="1">Перевозки ЖД транспортом</option>
+                        <option value="2">Перевозка автотранспортом</option>
+                        <option value="3">Морские перевозки</option>
+                        <option value="4">Брокерские услуги</option>
+                    </select>
+                    <ul class="main-services-nav tabs-nav">
+                        <li class="is-active">Авиаперевозки грузов</li>
+                        <li>Перевозки ЖД транспортом</li>
+                        <li>Перевозка автотранспортом</li>
+                        <li>Морские перевозки</li>
+                        <li>Брокерские услуги</li>
+                    </ul>
+
+                    <div class="tabs-list">
+                        <div class="tab-item is-active">
+                            <div class="main-services-item">
+                                <div class="main-services-pic">
+                                    <img src="img/avia.png" srcset="img/avia@2x.png 2x" alt="" loading="lazy" width="910" height="520" class="main-services-pic__img">
+                                </div>
+                                <div class="main-services-desc">
+                                    <div class="h3">Авиаперевозки грузов</div>
+                                    <p class="p">Наша компания WCS Group предоставляет клиентам полный комплекс логистических и таможенно–брокерских услуг для грузов от 10 кг до 100 тонн. Полный комплекс услуг в сфере морских, ЖД и авиаперевозок.</p>
+                                    <a href="#" class="btn">Детальнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="main-services-item">
+                                <div class="main-services-pic">
+                                    <img src="img/train.png" srcset="img/train@2x.png 2x" alt="" loading="lazy" width="910" height="520" class="main-services-pic__img">
+                                </div>
+                                <div class="main-services-desc">
+                                    <div class="h3">Перевозки ЖД транспортом</div>
+                                    <p class="p">Железнодорожные контейнерные перевозки считаются самыми надежными и недорогими. Особенно они актуальны, если Вы перевозите грузы часто и в больших количествах. Причем, чем больше расстояние, тем экономнее стоимость маршрута. Заказав перевозку ЖД транспортом в компании WCS Group, вы можете быть уверены в ответственном подходе и своевременной доставке.</p>
+                                    <a href="#" class="btn">Детальнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="main-services-item">
+                                <div class="main-services-pic">
+                                    <img src="img/avto.png" srcset="img/avto@2x.png 2x" alt="" loading="lazy" width="910" height="520" class="main-services-pic__img">
+                                </div>
+                                <div class="main-services-desc">
+                                    <div class="h3">Перевозка автотранспортом</div>
+                                    <p class="p">Автомобильные международные грузоперевозки – один из самых популярных запросов, с которыми к нам обращаются клиенты. Мы готовы обсудить с Вами перевозку груза в любую страну, предоставив возможность выбора транспорта и маршрута. Консультанты расскажут вам об особенностях доставки груза в страны на других континентах.</p>
+                                    <a href="#" class="btn">Детальнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="main-services-item">
+                                <div class="main-services-pic">
+                                    <img src="img/ship.png" srcset="img/ship@2x.png 2x" alt="" loading="lazy" width="910" height="520" class="main-services-pic__img">
+                                </div>
+                                <div class="main-services-desc">
+                                    <div class="h3">Морские перевозки</div>
+                                    <p class="p">Автомобильные международные грузоперевозки – один из самых популярных запросов, с которыми к нам обращаются клиенты. Мы готовы обсудить с Вами перевозку груза в любую страну, предоставив возможность выбора транспорта и маршрута. Консультанты расскажут вам об особенностях доставки груза в страны на других континентах.</p>
+                                    <a href="#" class="btn">Детальнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="main-services-item">
+                                <div class="main-services-pic">
+                                    <img src="img/broker.png" srcset="img/broker@2x.png 2x" alt="" loading="lazy" width="910" height="520" class="main-services-pic__img">
+                                </div>
+                                <div class="main-services-desc">
+                                    <div class="h3">Брокерские услуги</div>
+                                    <p class="p">Услуги по таможенному оформлению от международного логистического оператора — компании WCS Group с безупречной репутацией и огромным опытом логистического сопровождения своих клиентов. Основным преимуществом компании является предоставление полного комплекса услуг, одной из которых является таможенно-брокерское обслуживание Ваших грузов.</p>
+                                    <a href="#" class="btn">Детальнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="advantage">
+            <div class="advantage__wrapper indent-content">
+                <h2 class="advantage__title h2">Почему мы</h2>
+
+                <ul class="advantage-list">
+                    <li>
+                        <div class="advantage-pic">
+                            <img src="img/land.svg" alt="" loading="lazy" width="60" height="60" class="advantage-pic__img">
+                        </div>
+                        <div class="h4 ttu">ШИРОКИЕ ВОЗМОЖНОСТИ</div>
+                        <p class="p">Сеть агентов в более чем 120 странах мира. Транспортировка грузов от 10 кг до 200 тонн.</p>
+                    </li>
+                    <li>
+                        <div class="advantage-pic">
+                            <img src="img/case.svg" alt="" loading="lazy" width="60" height="60" class="advantage-pic__img">
+                        </div>
+                        <div class="h4 ttu">КОМПЛЕКСНЫЙ ПОДХОД</div>
+                        <p class="p">Компания предоставляет полный комплекс услуг в сфере организации и сопровождения импорта/экспорта.</p>
+                    </li>
+                    <li>
+                        <div class="advantage-pic">
+                            <img src="img/best.svg" alt="" loading="lazy" width="60" height="60" class="advantage-pic__img">
+                        </div>
+                        <div class="h4 ttu">ВЫГОДНЫЕ ТАРИФЫ</div>
+                        <p class="p">Многолетний опыт и хорошая организация позволяют нам предоставлять услуги по доступным ценам.</p>
+                    </li>
+                    <li>
+                        <div class="advantage-pic">
+                            <img src="img/clock.svg" alt="" loading="lazy" width="60" height="60" class="advantage-pic__img">
+                        </div>
+                        <div class="h4 ttu">СОБЛЮДАЕМ СРОКИ</div>
+                        <p class="p">Мы дорожим имиджем компании и соблюдаем все условия и сроки поставок оговоренные с клиентами.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-personal">
+            <div class="main-personal__wrapper indent-content">
+                <div class="h2 lg-dn">Ваш личный кабинет</div>
+                <div class="main-personal__container">
+                    <div class="main-personal__desc">
+                        <h2 class="main-personal__title h2">Ваш личный кабинет</h2>
+
+                        <div class="personal-nav">
+                            <div class="personal-control">
+                                <div class="personal-num js-personal-num-current"></div>
+                                <div class="personal-dots"></div>
+                                <div class="personal-num js-personal-num-total"></div>
+                            </div>
+                            <div class="personal-arrows">
+                                <button type="button" class="personal-arrow js-personal-arrow__prev">
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.11457 5.62236L6.32924 0.738164C6.50952 0.569287 6.50952 0.295496 6.32924 0.12662C6.14891 -0.0422065 5.85662 -0.0422065 5.67632 0.12662L0.135187 5.31659C-0.0450623 5.48546 -0.0450623 5.75926 0.135187 5.92813L5.67632 11.1181C5.85976 11.284 6.15208 11.2793 6.32924 11.1075C6.50205 10.9398 6.50205 10.6741 6.32924 10.5066L1.11457 5.62236Z" fill="#4A4A4A" />
+                                    </svg>
+
+                                </button>
+                                <button type="button" class="personal-arrow js-personal-arrow__next">
+                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.34991 5.62236L0.135238 0.738164C-0.0450382 0.569287 -0.0450382 0.295496 0.135238 0.12662C0.315568 -0.0422065 0.607858 -0.0422065 0.788161 0.12662L6.32929 5.31659C6.50954 5.48546 6.50954 5.75926 6.32929 5.92813L0.788161 11.1181C0.604719 11.284 0.312402 11.2793 0.135238 11.1075C-0.037571 10.9398 -0.037571 10.6741 0.135238 10.5066L5.34991 5.62236Z" fill="#4A4A4A" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="main-personal__texts">
+                            <div class="personal-text-slider js-personal-text-slider">
+                                <div class="personal-text-slider__item">
+                                    <div class="h4">Используйте, где и когда вам удобно</div>
+                                    <p class="p">Мы отлично знаем, как трудно организовать доставку самостоятельно, а поэтому берем всю работу на себя</p>
+                                </div>
+                                <div class="personal-text-slider__item">
+                                    <div class="h4">Lorem ipsum dolor sit amet.</div>
+                                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequuntur error itaque aliquid eius ducimus consectetur hic deleniti aspernatur, iusto sunt eum, dolores fuga ad. Eveniet, corrupti, facilis. Possimus, laudantium.</p>
+                                </div>
+                                <div class="personal-text-slider__item">
+                                    <div class="h4">Используйте, где и когда вам удобно</div>
+                                    <p class="p">Мы отлично знаем, как трудно организовать доставку самостоятельно, а поэтому берем всю работу на себя</p>
+                                </div>
+                                <div class="personal-text-slider__item">
+                                    <div class="h4">Lorem ipsum dolor sit amet.</div>
+                                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consequuntur error itaque aliquid eius ducimus consectetur hic deleniti aspernatur, iusto sunt eum, dolores fuga ad. Eveniet, corrupti, facilis. Possimus, laudantium.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">Создать аккаунт</a>
+                        </div>
+                    </div>
+                    <div class="main-personal__gallery">
+                        <div class="personal-gallery-slider js-personal-gallery-slider">
+                            <div class="personal-gallery-slider__item">
+                                <img src="img/main/172.png" alt="" loading="lazy" width="977" height="559" class="personal-gallery-slider__img">
+                            </div>
+                            <div class="personal-gallery-slider__item">
+                                <img src="img/avia.png" alt="" loading="lazy" width="977" height="559" class="personal-gallery-slider__img">
+                            </div>
+                            <div class="personal-gallery-slider__item">
+                                <img src="img/train.png" alt="" loading="lazy" width="977" height="559" class="personal-gallery-slider__img">
+                            </div>
+                            <div class="personal-gallery-slider__item">
+                                <img src="img/avto.png" alt="" loading="lazy" width="977" height="559" class="personal-gallery-slider__img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="main-about">
+            <div class="main-about__wrapper indent-content">
+                <div class="main-about__container">
+                    <div class="main-about__pic">
+                        <img src="img/map.png" srcset="img/map@2x.png 2x" alt="" loading="lazy" width="1035" height="747" class="main-about__img img">
+                    </div>
+                    <div class="main-about__desc">
+                        <h2 class="main-about__title h2">О компании</h2>
+                        <p class="p">Компания WCS Group осуществляет международные авиаперевозки по всему миру. География отправок насчитывает более 230 направлений на более 400 рейсов, большинство которых осуществляется ежедневно. Дополнительно мы предлагаем организацию страхования и таможенного оформления ваших грузов.</p>
+                        <p class="p">Обращаясь к нам, вы можете быть уверены, что любой ваш груз – от маленькой посылки до крупного промышленного оборудования – будет доставлен в максимально сжатые сроки и по самым выгодным тарифам, благодаря прямым агентским договорам с крупнейшими авиакомпаниями.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <!--   -->
+    </main>
+
+
+
+     <!--
+<div class="cookie">
+    <div class="cookie__wrapper">
+        <div class="cookie__text">Продолжая использовать наш сайт, вы даете согласие на обработку файлов cookie, которые обеспечивают правильную работу сайта.</div>
+        <div class="cookie__links">
+            <button type="button" class="btn js-cookie-btn">Принять</button>
+            <a href="#" class="cookie__link">Подробнее</a>
+        </div>
+    </div>
+</div>
+-->
+
+ <div id="proposal" class="modal modal-proposal">
+    <div class="modal-close">
+        <a href="#" rel="modal:close" class="modal-close__btn">
+            <svg class="ic ic-close ic-stroke"><use xlink:href="img/sprite.svg#close"></use></svg>
+        </a>
+    </div>
+    <div class="modal-head">
+        <div class="modal-title h3">Оставить заявку</div>
+        <div class="modal-stitle p">Напишите в заявке свои данные, и мы свяжемся с вами в ближайшее время</div>
+    </div>
+    <div class="modal-body">
+        <form action="/" class="form">
+            <div class="form-item">
+                <div class="form-icon">
+                    <svg class="ic ic-user ic-stroke"><use xlink:href="img/sprite.svg#user"></use></svg>
+                </div>
+                <input type="text" class="form-input input-icon" placeholder="Имя*">
+            </div>
+            <div class="form-item">
+                <div class="form-icon">
+                    <svg class="ic ic-phone ic-stroke"><use xlink:href="img/sprite.svg#phone"></use></svg>
+                </div>
+                <input type="tel" class="form-input input-icon" placeholder="Телефон*">
+            </div>
+            <div class="form-item">
+                <div class="form-icon">
+                    <svg class="ic ic-message-square ic-stroke"><use xlink:href="img/sprite.svg#message-square"></use></svg>
+                </div>
+                <input type="tel" class="form-input input-icon" placeholder="Сообщение">
+            </div>
+            <div class="form-submit">
+                <button type="submit" class="btn form-btn">Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+ 
+<footer class="ft">
+    <div class="ft__wrpper indent-content">
+        <div class="ft__container">
+            <nav class="ft__nav">
+                <ul class="ft-nav">
+                    <li><a href="#">Авиаперевозки грузов</a></li>
+                    <li><a href="#">Перевозки ЖД транспортом</a></li>
+                    <li><a href="#">Перевозка автотранспортом</a></li>
+                    <li><a href="#">Морские перезвозки</a></li>
+                    <li><a href="#">Брокерские услуги</a></li>
+                </ul>
+            </nav>
+            <div class="ft__body">
+                <div class="ft__logo">
+                    <a href="/" class="ft-logo">
+                        <img src="img/logo-group.svg" alt="" loading="lazy" width="178" height="92" class="ft-logo__img img">
+                    </a>
+                </div>
+                <div class="ft__copy">
+                    <p class="ft-copy">2022 © Все материалы данного сайта являются объектами авторского права. <br> Копирование запрещено.</p>
+                </div>
+                <div class="ft__links">
+                    <div class="ft__phone">
+                        <a href="tel:380662232487" class="ft-phone">+38 (066) 223-24-87</a>
+                    </div>
+                    <div class="ft__mail">
+                        <a href="mailto:office@wcsgroup.com.ua" class="ft-mail">office@wcsgroup.com.ua</a>
+                    </div>
+                </div>
+                <div class="ft__net">
+                    <ul class="ft-net">
+                        <li>
+                            <a href="#">
+                                <svg class="ic ic-instagram"><use xlink:href="img/sprite.svg#instagram"></use></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="ic ic-facebook"><use xlink:href="img/sprite.svg#facebook"></use></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+    <script src="js/plugins/plugins.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
