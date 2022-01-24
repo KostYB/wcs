@@ -1907,6 +1907,7 @@ span.pagination__c {
   text-align: center;
 }
 
+.one-news h1,
 .one-news h2 {
   font-weight: 800;
   font-size: 26px;
@@ -2126,6 +2127,7 @@ a.contacts-item:hover {
     padding: 34px 32px 38px;
   }
 
+  .one-news h1,
   .one-news h2 {
     font-size: 34px;
   }
@@ -2646,6 +2648,7 @@ a.contacts-item:hover {
     text-align: left;
   }
 
+  .one-news h1,
   .one-news h2 {
     font-size: 54px;
   }
@@ -3017,6 +3020,7 @@ a.contacts-item:hover {
     padding-bottom: 175px;
   }
 
+  .one-news h1,
   .one-news h2 {
     font-size: 62px;
     line-height: 1.22581;
