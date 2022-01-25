@@ -2,17 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   var lg = 992;
-
-  if (document.querySelector('[data-aos]') != null) {
-    AOS.init({
-      disable: window.innerWidth < 992,
-      once: true,
-      duration: 1000,
-      easing: 'ease-out-back'
-    });
-  }
-
-  ;
   $('.js-menu-btn').on('click', function () {
     $(this).toggleClass('open');
     $('.hd, body').toggleClass('open');
@@ -107,6 +96,17 @@ document.addEventListener('DOMContentLoaded', function () {
     background: true
   }, function () {
     document.querySelector('body').classList.remove('loading');
+
+    if (document.querySelector('[data-aos]') != null) {
+      AOS.init({
+        disable: window.innerWidth < 992,
+        once: true,
+        duration: 1000,
+        easing: 'ease-out-back'
+      });
+    }
+
+    ;
   });
 });
 
